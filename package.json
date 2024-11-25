@@ -1,0 +1,35 @@
+{
+  "name": "@gui/assets",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/gui-assets.es.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./*": "./dist/*"
+  },
+  "scripts": {
+    "build": "node build.js && vue-tsc -b && vite build",
+    "release": "node release.js"
+  },
+  "peerDependencies": {
+    "vue": ">=3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "@vitejs/plugin-vue": "^5.1.4",
+    "inquirer": "^12.0.1",
+    "recursive-readdir": "^2.2.3",
+    "svgo": "^3.3.2",
+    "typescript": "~5.6.2",
+    "vite": "^5.4.10",
+    "vite-plugin-dts": "^4.3.0",
+    "vue-tsc": "^2.1.8"
+  }
+}
