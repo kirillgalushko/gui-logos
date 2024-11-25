@@ -22,6 +22,7 @@ function clearDirectory(dirPath) {
 }
 
 function readAndOptimizeSVG(file) {
+  const fileName = path.basename(file, '.svg');
   const svgContent = fs.readFileSync(file, 'utf-8');
   return optimize(svgContent, {
     multipass: true,
@@ -31,13 +32,31 @@ function readAndOptimizeSVG(file) {
         params: {
           overrides: {
             removeViewBox: false,
+            removeUnknownsAndDefaults: false,
+            convertShapeToPath: false,
+            collapseGroups: false,
+            removeUselessDefs: false,
           },
         },
       },
       {
-        name: 'addAttributesToSVGElement',
+        name: 'removeComments',
+      },
+      { name: 'cleanupIds',
         params: {
-          attributes: [{ style: 'width: 1em; min-width: 1em; height: 1em; min-height: 1em;' }],
+          overrides: {
+            remove: false,
+            minify: false,
+          },
+        },
+      },
+      {
+        name: 'prefixIds',
+        params: {
+          delim: '-gui-asset-',
+          prefix: fileName,
+          prefixIds: true,
+          prefixClassNames: true
         },
       },
     ],
@@ -55,10 +74,32 @@ function createVueComponent(file, optimizedSvg, outputSubDir) {
   const variant = path.basename(outputSubDir)
   const fileNameWithPostfix = `${fileName}-${variant}`
   const pascalCaseFileName = toPascalCase(fileNameWithPostfix);
+  const modifiedSvg = optimizedSvg.replace(
+    /<svg([^>]*?)>/,
+    `<svg$1 :style="computedStyles">`
+  );
+
   const vueFileContent = `
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { computed } from 'vue';
+
+interface ${pascalCaseFileName}Props {
+  width?: string;
+  height?: string;
+}
+
+const props = defineProps<${pascalCaseFileName}Props>();
+
+const computedStyles = computed(() => ({
+  width: props.width || '1em',
+  height: props.height || '1em',
+  minWidth: props.width || '1em',
+  minHeight: props.height || '1em',
+}));
+</script>
+
 <template>
-  ${optimizedSvg}
+  ${modifiedSvg}
 </template>
   `;
   const vueFilePath = path.join(outputSubDir, `${pascalCaseFileName}.vue`);
