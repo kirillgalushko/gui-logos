@@ -1,0 +1,6 @@
+interface LogoPagekitProps {
+    width?: string;
+    height?: string;
+}
+declare const _default: import('vue').DefineComponent<LogoPagekitProps, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<LogoPagekitProps> & Readonly<{}>, {}, {}, {}, {}, string, import('vue').ComponentProvideOptions, false, {}, any>;
+export default _default;

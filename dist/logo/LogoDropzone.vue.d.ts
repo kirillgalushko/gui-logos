@@ -1,0 +1,6 @@
+interface LogoDropzoneProps {
+    width?: string;
+    height?: string;
+}
+declare const _default: import('vue').DefineComponent<LogoDropzoneProps, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<LogoDropzoneProps> & Readonly<{}>, {}, {}, {}, {}, string, import('vue').ComponentProvideOptions, false, {}, any>;
+export default _default;

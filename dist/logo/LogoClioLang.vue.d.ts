@@ -1,0 +1,6 @@
+interface LogoClioLangProps {
+    width?: string;
+    height?: string;
+}
+declare const _default: import('vue').DefineComponent<LogoClioLangProps, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<LogoClioLangProps> & Readonly<{}>, {}, {}, {}, {}, string, import('vue').ComponentProvideOptions, false, {}, any>;
+export default _default;

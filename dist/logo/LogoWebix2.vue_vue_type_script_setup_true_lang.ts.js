@@ -1,0 +1,31 @@
+import { defineComponent as i, computed as l, openBlock as p, createElementBlock as a, normalizeStyle as r, createStaticVNode as n } from "vue";
+const x = /* @__PURE__ */ i({
+  __name: "LogoWebix2",
+  props: {
+    width: {},
+    height: {}
+  },
+  setup(s) {
+    const o = s, e = l(() => ({
+      width: o.width || "1em",
+      height: o.height || "1em",
+      minWidth: o.width || "1em",
+      minHeight: o.height || "1em"
+    }));
+    return (g, t) => (p(), a("svg", {
+      xmlns: "http://www.w3.org/2000/svg",
+      "xmlns:xlink": "http://www.w3.org/1999/xlink",
+      width: "256",
+      height: "213",
+      preserveAspectRatio: "xMidYMid",
+      version: "1.1",
+      viewBox: "0 0 256 213",
+      style: r(e.value)
+    }, t[0] || (t[0] = [
+      n('<defs><linearGradient id="webix-2-gui-asset-c" x1="12.932%" x2="71.216%" y1="9.052%" y2="81.625%"><stop offset="0%" stop-color="#67337A"></stop><stop offset="100%" stop-color="#723986"></stop></linearGradient><linearGradient id="webix-2-gui-asset-d" x1="91.997%" x2="29.654%" y1="52.448%" y2="52.448%"><stop offset="0%" stop-color="#623274" stop-opacity="0"></stop><stop offset="100%" stop-color="#542C65"></stop></linearGradient><linearGradient id="webix-2-gui-asset-e" x1="91.997%" x2="29.654%" y1="52.448%" y2="52.448%"><stop offset="0%" stop-color="#623274" stop-opacity="0"></stop><stop offset="100%" stop-color="#542C65"></stop></linearGradient><linearGradient id="webix-2-gui-asset-f" x1="91.675%" x2="56.225%" y1="5.599%" y2="79.874%"><stop offset="0%" stop-color="#8A519F"></stop><stop offset="100%" stop-color="#8A53A0"></stop></linearGradient><linearGradient id="webix-2-gui-asset-g" x1="63.479%" x2="0%" y1="48.225%" y2="48.225%"><stop offset="0%" stop-color="#8A529F" stop-opacity=".1"></stop><stop offset="100%" stop-color="#542C65"></stop></linearGradient><linearGradient id="webix-2-gui-asset-h" x1="24.699%" x2="80.097%" y1="31.401%" y2="66.964%"><stop offset="0%" stop-color="#5C2E6D"></stop><stop offset="100%" stop-color="#6D377B"></stop></linearGradient><linearGradient id="webix-2-gui-asset-i" x1="12.346%" x2="81.65%" y1="34.458%" y2="53.652%"><stop offset="0%" stop-color="#612E74"></stop><stop offset="100%" stop-color="#7F4395"></stop></linearGradient><linearGradient id="webix-2-gui-asset-j" x1="100%" x2="100%" y1="0%" y2="69.36%"><stop offset="0%" stop-color="#582C6A"></stop><stop offset="100%" stop-color="#743983"></stop></linearGradient><linearGradient id="webix-2-gui-asset-k" x1="50%" x2="19.624%" y1="74.788%" y2="71.707%"><stop offset="0%" stop-color="#623274" stop-opacity="0"></stop><stop offset="100%" stop-color="#542C65"></stop></linearGradient><linearGradient id="webix-2-gui-asset-l" x1="0%" x2="0%" y1="0%" y2="100%"><stop offset="0%" stop-color="#723A85"></stop><stop offset="100%" stop-color="#8C519C"></stop></linearGradient><linearGradient id="webix-2-gui-asset-m" x1="0%" x2="62.291%" y1="35.927%" y2="46.718%"><stop offset="0%" stop-color="#66397A"></stop><stop offset="100%" stop-color="#9F69AB"></stop></linearGradient><linearGradient id="webix-2-gui-asset-n" x1="72%" x2="0%" y1="48.225%" y2="48.225%"><stop offset="0%" stop-color="#623274" stop-opacity="0"></stop><stop offset="100%" stop-color="#542C65"></stop></linearGradient><linearGradient id="webix-2-gui-asset-o" x1="50%" x2="50%" y1="21.039%" y2="78.192%"><stop offset="0%" stop-color="#5D306E"></stop><stop offset="100%" stop-color="#9F6AAA"></stop></linearGradient><rect id="webix-2-gui-asset-a" width="256.003" height="210.939" x="0" y=".328"></rect></defs><g><mask id="webix-2-gui-asset-b" fill="#fff"><use xlink:href="#webix-2-gui-asset-a"></use></mask><polygon fill="#5B2E6E" points="6.39488462e-14 139.993146 6.39488462e-14 0.328353673 64.1019552 70.4120588 128.480846 0.328353673 192.001666 70.0488156 256.002879 0.328353673 256.002879 140.314947 192.721269 211.267056 128.480846 141.273759 64.240423 211.267056" mask="url(#webix-2-gui-asset-b)"></polygon><path fill="url(#webix-2-gui-asset-c)" d="M32.122 105.798c6.655-7.285 28.07-30.726 32.118-35.16C56.104 61.737 13.276 14.86 0 .329z" mask="url(#webix-2-gui-asset-b)"></path><polygon fill="url(#webix-2-gui-asset-d)" points="16.9102703 -2.99931617 31.9481592 28.2669449 32.5320785 113.478296 6.64414686 113.478296" mask="url(#webix-2-gui-asset-b)" transform="rotate(-17 19.588 55.24)"></polygon><polygon fill="url(#webix-2-gui-asset-e)" points="29.7231827 60.7335265 60.4051755 70.8163387 57.5833641 111.709823 37.174144 114.427014" mask="url(#webix-2-gui-asset-b)" transform="rotate(-125 45.064 87.58)"></polygon><polygon fill="url(#webix-2-gui-asset-f)" points="191.762456 70.3181739 256.002879 140.314947 256.002879 0.328353673" mask="url(#webix-2-gui-asset-b)"></polygon><polygon fill="url(#webix-2-gui-asset-g)" points="223.556597 50.9019177 243.313569 50.410916 237.842526 126.385877 217.840883 145.701239" mask="url(#webix-2-gui-asset-b)" transform="rotate(-46 230.577 98.056)"></polygon><polygon fill="url(#webix-2-gui-asset-h)" points="192.721269 211.267056 256.002879 140.314947 168.750961 44.4337188" mask="url(#webix-2-gui-asset-b)"></polygon><polygon fill="url(#webix-2-gui-asset-i)" points="128.480846 141.273759 192.721269 211.267056 168.750961 44.4337188" mask="url(#webix-2-gui-asset-b)"></polygon><polygon fill="url(#webix-2-gui-asset-j)" points="64.240423 211.267056 128.480846 141.273759 128.480846 0.328353673" mask="url(#webix-2-gui-asset-b)"></polygon><polygon fill="url(#webix-2-gui-asset-k)" points="64.240423 211.267056 89.3614956 183.896334 128.480846 41.5035652 128.480846 0.328353673" mask="url(#webix-2-gui-asset-b)"></polygon><polygon fill="url(#webix-2-gui-asset-l)" points="128.480846 141.273759 168.750961 44.4337188 128.480846 0.328353673" mask="url(#webix-2-gui-asset-b)"></polygon><path fill="url(#webix-2-gui-asset-m)" d="M31.64 105.662c2.2 7.204 32.605 105.605 32.605 105.605L128.48.328z" mask="url(#webix-2-gui-asset-b)"></path><polygon fill="url(#webix-2-gui-asset-n)" points="41.8125024 102.192348 70.7663589 85.2482309 70.5188919 196.079978 45.406988 210.827574" mask="url(#webix-2-gui-asset-b)" transform="rotate(-17 56.29 148.038)"></polygon><polygon fill="url(#webix-2-gui-asset-o)" points="7.10542736e-15 140.774684 64.240423 211.267056 0.00263550453 0.328353673" mask="url(#webix-2-gui-asset-b)"></polygon></g>', 2)
+    ]), 4));
+  }
+});
+export {
+  x as _
+};

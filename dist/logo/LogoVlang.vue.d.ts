@@ -1,0 +1,6 @@
+interface LogoVlangProps {
+    width?: string;
+    height?: string;
+}
+declare const _default: import('vue').DefineComponent<LogoVlangProps, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<LogoVlangProps> & Readonly<{}>, {}, {}, {}, {}, string, import('vue').ComponentProvideOptions, false, {}, any>;
+export default _default;

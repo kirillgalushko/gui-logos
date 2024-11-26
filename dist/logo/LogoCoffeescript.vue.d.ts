@@ -1,0 +1,6 @@
+interface LogoCoffeescriptProps {
+    width?: string;
+    height?: string;
+}
+declare const _default: import('vue').DefineComponent<LogoCoffeescriptProps, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<LogoCoffeescriptProps> & Readonly<{}>, {}, {}, {}, {}, string, import('vue').ComponentProvideOptions, false, {}, any>;
+export default _default;

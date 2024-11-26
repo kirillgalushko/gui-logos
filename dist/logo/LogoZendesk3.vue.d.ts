@@ -1,0 +1,6 @@
+interface LogoZendesk3Props {
+    width?: string;
+    height?: string;
+}
+declare const _default: import('vue').DefineComponent<LogoZendesk3Props, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<LogoZendesk3Props> & Readonly<{}>, {}, {}, {}, {}, string, import('vue').ComponentProvideOptions, false, {}, any>;
+export default _default;

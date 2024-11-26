@@ -1,0 +1,6 @@
+interface LogoGitlab2Props {
+    width?: string;
+    height?: string;
+}
+declare const _default: import('vue').DefineComponent<LogoGitlab2Props, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<LogoGitlab2Props> & Readonly<{}>, {}, {}, {}, {}, string, import('vue').ComponentProvideOptions, false, {}, any>;
+export default _default;

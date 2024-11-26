@@ -1,0 +1,6 @@
+interface LogoTidal2Props {
+    width?: string;
+    height?: string;
+}
+declare const _default: import('vue').DefineComponent<LogoTidal2Props, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<LogoTidal2Props> & Readonly<{}>, {}, {}, {}, {}, string, import('vue').ComponentProvideOptions, false, {}, any>;
+export default _default;
