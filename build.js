@@ -72,7 +72,7 @@ function ensureDirectoryExists(dirPath) {
 function createVueComponent(file, optimizedSvg, outputSubDir) {
   const fileName = path.basename(file, '.svg');
   const variant = path.basename(outputSubDir)
-  const fileNameWithPostfix = `${fileName}-${variant}`
+  const fileNameWithPostfix = `${variant}-${fileName}`
   const pascalCaseFileName = toPascalCase(fileNameWithPostfix);
   const modifiedSvg = optimizedSvg.replace(
     /<svg([^>]*?)>/,
