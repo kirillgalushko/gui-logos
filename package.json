@@ -14,7 +14,7 @@
       "types": "./dist/index.d.ts"
     },
     "./*": "./dist/*",
-    "./logo/*": "./assets/logo/*"
+    "./svg/*": "./assets/logo/*"
   },
   "scripts": {
     "clean": "node clean.js",
