@@ -14,11 +14,11 @@ const r = /* @__PURE__ */ h({
     }));
     return (l, t) => (s(), a("svg", {
       xmlns: "http://www.w3.org/2000/svg",
-      width: "800",
-      height: "800",
+      width: "512",
+      height: "128",
       preserveAspectRatio: "xMidYMid",
       version: "1.1",
-      viewBox: "0 -192 512 512",
+      viewBox: "0 0 512 128",
       style: n(o.value)
     }, t[0] || (t[0] = [
       c("g", null, [
