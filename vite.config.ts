@@ -40,7 +40,7 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, 'build/index.ts'),
       formats: ['es'],
-      fileName: (format) => `gui-assets.${format}.js`,
+      fileName: (format) => `gui-logos.${format}.js`,
     },
   },
 })
