@@ -12,7 +12,6 @@
     "lib": ["ESNext", "DOM"],
     "skipLibCheck": true,
     "noEmit": true,
-    "emitDeclarationOnly": true,
     "declaration": true,
     "declarationDir": "./dist/types",
     "outDir": "./dist",
