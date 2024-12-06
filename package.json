@@ -5,14 +5,16 @@
   "type": "module",
   "types": "./dist/index.d.ts",
   "files": [
-    "dist/**/*"
+    "dist/**/*",
+    "assets/**/*"
   ],
   "exports": {
     ".": {
       "import": "./dist/gui-logos.es.js",
       "types": "./dist/index.d.ts"
     },
-    "./*": "./dist/*"
+    "./*": "./dist/*",
+    "./logo/*": "./assets/logo/*"
   },
   "scripts": {
     "clean": "node clean.js",
